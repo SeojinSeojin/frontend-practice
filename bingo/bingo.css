@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    background: linear-gradient(rgb(224, 115, 81), rgb(250, 188, 106));
+    background-repeat: no-repeat;
+    height: 725px;
+    min-width: 600px;
+    font-family: cursive;
+}
+
+.title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin: 0px;
+    color: rgb(236, 218, 184);
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    box-shadow: rgba(56, 27, 3, 0.418) 0px 3px 7px;
+}
+
+td {
+    font-weight: bold;
+    font-size: 16px;
+    border: 10px solid orange;
+    width: 130px;
+    height: 130px;
+    padding: 3px;
+    word-break: keep-all;
+    transition: 0.3s;
+}
+
+.result {
+    position: relative;
+    font-size: 30px;
+    left: 5%;
+    color: rgb(236, 218, 184);
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
