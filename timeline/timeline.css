@@ -6,11 +6,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: fit-content;
+    min-height: 100vh;
+    background: linear-gradient(217deg, rgba(252, 161, 120, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(165, 250, 210, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(149, 149, 223, 0.8), rgba(0, 0, 255, 0) 70.71%);
 }
 
 .timeline {
+    margin-top: 2.5rem;
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
+    height: fit-content;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     /*align-items: center;*/
@@ -20,29 +26,31 @@ body {
     align-self: flex-start;
     border-bottom-left-radius: 2rem;
     border-top-right-radius: 2rem;
-    box-shadow: 3px 4px 1px 2px rgba(72, 100, 79, 0.3);
+    box-shadow: 3px 4px 0px 2px rgb(104, 112, 153);
 }
 
 .timebox:nth-child(2n-1):hover {
-    margin-left: 3rem;
+    margin-left: 3.5rem;
 }
 
 .timebox:nth-child(2n) {
     align-self: flex-end;
     border-bottom-right-radius: 2rem;
     border-top-left-radius: 2rem;
-    box-shadow: -3px 4px 1px 2px rgba(72, 100, 79, 0.3);
+    box-shadow: -3px 4px 0px 2px rgb(104, 112, 153);
 }
 
 .timebox:nth-child(2n):hover {
-    margin-right: 3rem;
+    margin-right: 3.5rem;
 }
 
 .timebox {
     width: 300px;
-    height: 120px;
-    background-color: rgb(221, 240, 229);
-    margin-top: 20px;
+    height: 8.5rem;
+    background-color: rgb(183, 188, 218);
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
     padding: 5px;
     transition: 0.4s;
 }
@@ -58,16 +66,25 @@ body {
     height: 50px;
     width: auto;
     background-color: white;
-    border: 5px solid rgb(221, 240, 229);
+    border: 4px solid rgb(133, 145, 211);
 }
 
 .timetitle {
+    width: 5rem;
     font-size: 1.2rem;
-    margin-left: 35px;
+    font-weight: bold;
+    padding-left: 35px;
+    border-bottom: 3px dotted rgb(133, 145, 211);
 }
 
 .timecontent {
     margin-top: 0.5rem;
+}
+
+.timecontent ul li {
+    list-style: none;
+    margin-top: .5rem;
+    color: rgb(65, 65, 75);
 }
 
 #line {
@@ -81,8 +98,10 @@ body {
     margin: 0;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
-    background-color: white;
-    box-shadow: 0 0 2px 6px rgba(0, 0, 0, 0.2);
+    border-bottom: 5px solid rgb(104, 112, 153);
+    background-color: rgb(183, 188, 218);
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.25);
     padding: 1.2rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
