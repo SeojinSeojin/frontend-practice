@@ -8,7 +8,8 @@ body {
     align-items: center;
     height: fit-content;
     min-height: 100vh;
-    background: linear-gradient(217deg, rgba(252, 161, 120, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(165, 250, 210, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(149, 149, 223, 0.8), rgba(0, 0, 255, 0) 70.71%);
+    background-color: black;
+    background: linear-gradient(217deg, rgb(3, 41, 35), rgba(0, 0, 0, 0.4) 90%), linear-gradient(127deg, rgb(3, 17, 43), rgba(0, 0, 0, 0.4) 90%), linear-gradient(336deg, rgb(23, 6, 54), rgba(0, 0, 0, 0.4) 90%);
 }
 
 .timeline {
@@ -19,14 +20,13 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /*align-items: center;*/
 }
 
 .timebox:nth-child(2n-1) {
     align-self: flex-start;
     border-bottom-left-radius: 2rem;
     border-top-right-radius: 2rem;
-    box-shadow: 3px 4px 0px 2px rgb(104, 112, 153);
+    box-shadow: 3px 4px 0px 2px rgb(171, 177, 204);
 }
 
 .timebox:nth-child(2n-1):hover {
@@ -37,7 +37,7 @@ body {
     align-self: flex-end;
     border-bottom-right-radius: 2rem;
     border-top-left-radius: 2rem;
-    box-shadow: -3px 4px 0px 2px rgb(104, 112, 153);
+    box-shadow: -3px 4px 0px 2px rgb(171, 177, 204);
 }
 
 .timebox:nth-child(2n):hover {
@@ -47,7 +47,9 @@ body {
 .timebox {
     width: 300px;
     height: 8.5rem;
-    background-color: rgb(183, 188, 218);
+    background: linear-gradient(20deg, rgb(13, 21, 49), rgb(17, 33, 85) 80%, rgb(13, 21, 49));
+    color: white;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.5);
     margin-top: 30px;
     margin-right: 15px;
     margin-left: 15px;
@@ -66,7 +68,7 @@ body {
     height: 50px;
     width: auto;
     background-color: white;
-    border: 4px solid rgb(133, 145, 211);
+    border: 4px solid rgb(17, 33, 85);
 }
 
 .timetitle {
@@ -74,7 +76,8 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     padding-left: 35px;
-    border-bottom: 3px dotted rgb(133, 145, 211);
+    padding-bottom: 0.3rem;
+    border-bottom: 3px dotted rgb(123, 138, 221);
 }
 
 .timecontent {
@@ -84,12 +87,12 @@ body {
 .timecontent ul li {
     list-style: none;
     margin-top: .5rem;
-    color: rgb(65, 65, 75);
+    color: rgb(221, 221, 248);
 }
 
 #line {
     height: 100vh;
-    border-right: 1px dashed black;
+    border-right: 2px dashed rgb(123, 138, 221);
     position: fixed;
     z-index: -1;
 }
@@ -98,9 +101,10 @@ body {
     margin: 0;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
-    border-bottom: 5px solid rgb(104, 112, 153);
-    background-color: rgb(183, 188, 218);
-    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.25);
+    border-bottom: 5px solid rgb(171, 177, 204);
+    background-color: rgb(13, 21, 49);
+    color: white;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.5);
     padding: 1.2rem;
     font-size: 1.3rem;
     font-weight: bold;

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Timers</title>
+</head>
+
+<body>
+    <div id="timer">
+        <h2>타이머</h2>
+        <div class="clockdiv">
+            <div id="timer-clock">
+                00:00
+            </div>
+        </div>
+        <button id="timer-plus1">1분 추가</button>
+        <button id="timer-plus5">5분 추가</button>
+        <button id="timer-plus10">10분 추가</button>
+        <button id="timer-start">시작</button>
+        <button id="timer-pause" hidden>중지</button>
+        <button id="timer-record" hidden>기록</button>
+        <button id="timer-resume" hidden>계속</button>
+        <button id="timer-restart" hidden>초기화</button>
+        <div id="timer-records"></div>
+    </div>
+    <div id="stopwatch">
+        <h2>스톱워치</h2>
+        <div class="clockdiv">
+            <div id="stopwatch-clock">
+                00:00
+            </div>
+        </div>
+        <button id="stopwatch-start">시작</button>
+        <button id="stopwatch-pause" hidden>중지</button>
+        <button id="stopwatch-record" hidden>기록</button>
+        <button id="stopwatch-restart" hidden>초기화</button>
+        <div id="stopwatch-records"></div>
+    </div>
+
+    <script type="module" src="./stopwatch.js"></script>
+    <script type="module" src="./timer.js"></script>
+</body>
+
+</html>
