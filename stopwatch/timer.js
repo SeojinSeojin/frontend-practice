@@ -45,7 +45,7 @@ btn_start.addEventListener("click", () => {
             clock.innerText = makeTime(curSec)
             clock.style.color = "black"
         }
-    }, 100)
+    }, 1000)
     btn_start.innerText = "계속"
     btn_restart.hidden = false
     switchDisplay([btn_start, btn_pause, btn_record])

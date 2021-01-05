@@ -7,6 +7,7 @@
 ## JS
 
 [빙고](https://seojinseojin.github.io/frontend-practice/bingo/)
+[스톱워치와 타이머](https://seojinseojin.github.io/frontend-practice/stopwatch/)
 
 ## Templates
 
