@@ -1,0 +1,23 @@
+.book-image {
+    float: left;
+}
+
+.book-search-res-div {
+    min-height: 230px;
+    padding: 1rem;
+}
+
+.book-title {
+    font-size: 1.4rem;
+    padding-bottom: .7rem;
+}
+
+.book-star-btn {
+    float: right;
+}
+
+#textSubmit,
+button {
+    border: none;
+    background: transparent;
+}
