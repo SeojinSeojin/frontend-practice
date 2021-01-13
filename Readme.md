@@ -3,6 +3,7 @@
 ## HTML & CSS
 
 [타임라인](https://seojinseojin.github.io/frontend-practice/timeline/)
+[HTML만 사용한 실습](https://seojinseojin.github.io/frontend-practice/only-html-practice/)
 
 ## JS
 

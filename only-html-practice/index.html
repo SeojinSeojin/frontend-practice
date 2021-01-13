@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Only HTML</title>
+    <style>
+        *[tooltip]:after {
+            content: attr(tooltip);
+            opacity: 0;
+            transition: all .5s;
+            -webkit-transition: all .5s;
+            background-color: rgba(0, 0, 0, 0.61);
+            border-radius: .4rem;
+            color: #fff;
+            position: absolute;
+            white-space: nowrap;
+            box-shadow: 0 2px 10px 5px rgba(0, 0, 0, 0.2);
+            padding: 0.7rem;
+            margin-left: 1rem;
+        }
+        
+        *[tooltip]:hover:after {
+            opacity: 1;
+            margin-left: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>9기 운영진 여러분 안녕하세요, 8기 회장이었던 김서진입니다.<br>드디어 기다리고 기다리던 운영진 스터디의 첫 시간이 되었는데요,</p>
+        <p>오늘의 목표는 다음과 같습니다.</p>
+        <ul>
+            <li>'웹'을 이해한다</li>
+            <li>HTML 태그들을 활용해 본다</li>
+        </ul>
+    </div>
+    <h3>그럼 시작해 봅시다!</h3>
+    <p></p>
+    <div>
+        첫 스터디 과제로 자기소개는 무조건이죠~
+        <br> 아래 양식에 맞춰서 자기소개용 HTML 문서를 작성해주세요!
+        <br> 20분 후에 발표도 할거랍니다~ 기대가 되네요!!
+    </div>
+    <p></p>
+    <div>안녕하세요😉 제 이름은 <b>김서진</b>입니다.</div>
+    <div><a href="https://comedu.skku.edu/comedu/index.do">성균관대학교 컴퓨터교육과</a> 19학번으로 재학중입니다.</div>
+    <table border="1">
+        <tr tooltip="table">
+            <th>질문</th>
+            <th>답변</th>
+        </tr>
+        <tr tooltip="img">
+            <td>자주 쓰는 이모티콘은?</td>
+            <td><img height="150px" src="https://pbs.twimg.com/profile_images/1173873201039806464/R1lWiNES.jpg" alt=""></td>
+        </tr>
+        <tr tooltip="ol, ul">
+            <td>베라 3픽은?</td>
+            <td>
+                <ol>
+                    <li>초코나무숲</li>
+                    <li>엄마는외계인</li>
+                    <li>알퐁소망고</li>
+                </ol>
+            </td>
+        </tr>
+        <tr tooltip="mark">
+            <td>좌우명은?</td>
+            <td>
+                <mark>세상에서 가장 해로운 벌레는 '대충'이다.</mark>
+            </td>
+        </tr>
+        <tr tooltip="radio input">
+            <td>MBTI는?</td>
+            <td>
+                <div>
+                    <input type="radio" name="openness">E
+                    <input type="radio" name="openness">I
+                </div>
+                <div>
+                    <input type="radio" name="cognission">N
+                    <input type="radio" name="cognission">S
+                </div>
+                <div>
+                    <input type="radio" name="judgement">T
+                    <input type="radio" name="judgement">F
+                </div>
+                <div>
+                    <input type="radio" name="living">P
+                    <input type="radio" name="living">J
+                </div>
+            </td>
+        </tr>
+        <tr tooltip="a href">
+            <td>Github 주소는?</td>
+            <td><a href="https://github.com/SeojinSeojin">여기!</a></td>
+        </tr>
+        <tr tooltip="checkbox input">
+            <td>2021년 이루고 싶은 것은?</td>
+            <td>
+                <input type="checkbox" name="wishlist" id="">저축
+                <input type="checkbox" name="wishlist" id="">여행
+                <input type="checkbox" name="wishlist" id="">코딩 정복
+                <input type="checkbox" name="wishlist" id="">효도
+            </td>
+        </tr>
+    </table>
+    <div>
+        <p>일찍 완료하신 분들을 위한 추가 문제입니다.</p>
+        <p><code>iframe</code>이라는 키워드로 검색하시면 쉽게 수행하실 수 있으실 거에요</p>
+        <ol>
+            <li>
+                <p>HTML 속으로 구글 지도 갖고오기</p>
+                <p>원하는 장소에 대한 구글 지도를 아래에 가져다 주세요</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.016634217811!2d127.0253597149787!3d37.601767529867985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cbc905bed7475%3A0xcdb0374b73849795!2z6rCc7Jq0IOy0iOuTse2Vmeq1kA!5e0!3m2!1sko!2skr!4v1610477049157!5m2!1sko!2skr"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </li>
+            <li>
+                <p>HTML 속으로 유튜브 갖고오기</p>
+                <p>원하는 영상에 대한 유튜브 영상을 아래에 가져다 주세요.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HOl9wiMm0rk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+        </ol>
+    </div>
+    <div>모두 수고하셨습니다!!</div>
+    <div style="padding: 1rem; border-radius:2rem; box-shadow:0 2px 10px 4px rgba(0, 0, 0, 0.15); margin-top:10px;margin-bottom:10px; background:linear-gradient(transparent,rgba(88, 84, 84, 0.1));">
+        <span style="color: rgb(74, 47, 192);font-weight:900;">CSS</span>를 배우면, 요소들의 스타일 속성도 업그레이드하실 수 있으실 거에요~
+    </div>
+</body>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script type="text/javascript">
+    document.addEventListener("keydown", (e) => {
+        if (e.keyCode == 123) {
+            e.preventDefault();
+            e.returnValue = false;
+        }
+    })
+</script>
+
+</html>
