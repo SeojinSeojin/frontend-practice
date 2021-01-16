@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Jal_Onuel';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Onuel.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#introd-main {
+    margin: 1rem;
+    padding: 2rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Jal_Onuel';
+    box-shadow: 0 2px 4px 4px rgba(66, 0, 0, 0.25);
+    border-radius: 1rem;
+    width: max-content;
+    background: linear-gradient(145deg, white, rgb(241, 211, 216));
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 0.5rem;
+}
+
+mark {
+    background-color: rgb(170, 21, 21);
+    color: white;
+    padding: 0.3rem;
+}
+
+td:nth-child(2) {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked),
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"]:checked+label,
+[type="radio"]:not(:checked)+label,
+[type="checkbox"]:checked+label,
+[type="checkbox"]:not(:checked)+label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+
+[type="radio"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before,
+[type="checkbox"]:checked+label:before,
+[type="checkbox"]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+
+[type="checkbox"]:checked+label:before,
+[type="checkbox"]:not(:checked)+label:before {
+    border-radius: 10%;
+}
+
+[type="radio"]:checked+label:before {
+    border: 2px solid #9f9cff;
+    border-radius: 100%;
+}
+
+[type="checkbox"]:checked+label:before {
+    border: 2px solid #9f9cff;
+    border-radius: 10%;
+}
+
+[type="radio"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after {
+    content: '';
+    width: 9px;
+    height: 9px;
+    background: #9f9cff;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked)+label:after,
+[type="checkbox"]:not(:checked)+label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+[type="radio"]:checked+label:after,
+[type="checkbox"]:checked+label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WITH CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <p>이 과제의 목표는 다음과 같습니다.</p>
+        <ul>
+            <li>CSS 선택자를 활용한다</li>
+            <li>CSS 속성을 적용한다</li>
+        </ul>
+    </div>
+    <div>자기소개 퀴즈 파일에 다음과 같이 스타일을 적용해 주세요~ 아예 똑같지는 않아도 됩니다!</div>
+    <div><a href="https://noonnu.cc/">이곳</a>에서 폰트도 import해서 사용해보세요~</div>
+    <div id="introd-main">
+        <div style="margin-bottom: 1rem;">안녕하세요! 저는
+            <a href="https://comedu.skku.edu/comedu/index.do">성균관대학교 컴퓨터교육과</a> 19학번 김서진입니다.
+        </div>
+        <table border="1">
+            <tr tooltip="table">
+                <th>질문</th>
+                <th>답변</th>
+            </tr>
+            <tr>
+                <td>자주 쓰는 이모티콘은?</td>
+                <td>
+                    <img height="150px" src="https://pbs.twimg.com/profile_images/1173873201039806464/R1lWiNES.jpg" alt="" />
+                </td>
+            </tr>
+            <tr>
+                <td>베라 3픽은?</td>
+                <td>
+                    <ol>
+                        <li>초코나무숲</li>
+                        <li>엄마는외계인</li>
+                        <li>알퐁소망고</li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>좌우명은?</td>
+                <td>
+                    <mark>세상에서 가장 해로운 벌레는 '대충'이다.</mark>
+                </td>
+            </tr>
+            <tr>
+                <td>MBTI는?</td>
+                <td>
+                    <div>
+                        <input type="radio" name="openness" id="E" /><label for="E">E</label>
+                        <input type="radio" name="openness" id="I" /><label for="I">I</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="cognission" id="N" /><label for="N">N</label>
+                        <input type="radio" name="cognission" id="S" /><label for="S">S</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="judgement" id="T" /><label for="T">T</label>
+                        <input type="radio" name="judgement" id="F" /><label for="F">F</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="living" id="P" /><label for="P">P</label>
+                        <input type="radio" name="living" id="J" /><label for="J">J</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Github 주소는?</td>
+                <td><a href="https://github.com/SeojinSeojin">여기!</a></td>
+            </tr>
+            <tr>
+                <td>2021년 이루고 싶은 것은?</td>
+                <td>
+                    <input type="checkbox" name="wishlist" id="a" /><label for="a">저축</label>
+                    <input type="checkbox" name="wishlist" id="b" /><label for="b">여행</label>
+                    <input type="checkbox" name="wishlist" id="c" /><label for="c">코딩 정복</label>
+                    <input type="checkbox" name="wishlist" id="d" /><label for="d">효도</label>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script type="text/javascript">
+    document.addEventListener("keydown", (e) => {
+        if (e.keyCode == 123) {
+            e.preventDefault();
+            e.returnValue = false;
+        }
+    });
+</script>
+
+</html>
