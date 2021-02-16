@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+#chart {
+    transform: perspective(800px) rotateX(45deg);
+}
+
+path {
+    transition: 0.3s;
+}
+
+path:hover {
+    fill: black;
+    transform: translate(0, -5px);
+    z-index: 300;
+}

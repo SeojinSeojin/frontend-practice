@@ -11,6 +11,7 @@
 [빙고](https://seojinseojin.github.io/frontend-practice/bingo/)
 [스톱워치와 타이머](https://seojinseojin.github.io/frontend-practice/stopwatch/)
 [카카오 도서 API](https://seojinseojin.github.io/frontend-practice/book-api-proj/)
+[d3js 지도 연습](https://seojinseojin.github.io/frontend-practice/d3-map/)
 
 ## Templates
 
