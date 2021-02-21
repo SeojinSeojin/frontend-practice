@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deck GL Map</title>
+    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css">
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        #container {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #info {
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin: 12px;
+        }
+        
+        a {
+            color: #08f;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container"></div>
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+    <script src="https://unpkg.com/deck.gl@latest/dist.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
