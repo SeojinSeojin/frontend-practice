@@ -13,6 +13,7 @@
 [카카오 도서 API](https://seojinseojin.github.io/frontend-practice/book-api-proj/)
 [d3js 지도 연습](https://seojinseojin.github.io/frontend-practice/d3-map/)
 [deck.gl 지도 연습](https://seojinseojin.github.io/frontend-practice/deckgl-map/)
+[ploty.js 그래프 연습](https://seojinseojin.github.io/frontend-practice/ploty/)
 
 ## Templates
 
