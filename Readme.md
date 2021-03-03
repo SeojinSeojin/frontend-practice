@@ -14,6 +14,7 @@
 [d3js 지도 연습](https://seojinseojin.github.io/frontend-practice/d3-map/)
 [deck.gl 지도 연습](https://seojinseojin.github.io/frontend-practice/deckgl-map/)
 [ploty.js 그래프 연습](https://seojinseojin.github.io/frontend-practice/ploty/)
+[chart.js 그래프 연습 with 날씨 API](https://seojinseojin.github.io/frontend-practice/weather-api-proj/)
 
 ## Templates
 
