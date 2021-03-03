@@ -28,7 +28,7 @@ let data = {
 
 $.ajax({
     method: "GET",
-    url: "http://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=37.5326&lon=127.0246&appid=18a1a16ff26a25bcea6aa824c657e300",
+    url: "https://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=37.5326&lon=127.0246&appid=18a1a16ff26a25bcea6aa824c657e300",
 }).done((results) => {
     results.list.forEach((d) => {
         data.labels.push(unixtToDate(d.dt));
