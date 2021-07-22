@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <script type="text/javascript" src="./pokemons.json"></script>
     <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
     <title>Document</title>
     <style>
@@ -27,21 +28,29 @@
 </head>
 <body>
 
-    <video id="webcam" autoplay playsinline width="600" height="400"></video>
-    <canvas id="canvas" class="d-none"></canvas>
-
+    <div style="text-align: center; font-size: 3rem;">Guess Which Pokemon looks like</div>
     <div style="display: flex; width: 100%; justify-content: center; align-items: center;">
+        <video id="webcam" autoplay playsinline width="600" height="400"></video>
+    </div>
+    <div style="display: flex; width: 100%; height:6rem; justify-content: center; align-items: center; flex-direction: column;">
         <div id="btn-capture">
-            SNAP!
+            GOTCHA!
         </div>
     </div>
+    <div style="display: grid;grid-template-columns:1fr 1fr">
+        <canvas id="canvas" class="d-none"></canvas>
+        <image id="result" src=""></image>
+    </div>
+    
 </body>
-    <script>
+    <script type="module">
         const webcamElement = document.getElementById('webcam');
         const canvasElement = document.getElementById('canvas');
         const snapSoundElement = document.getElementById('snapSound');
         const snapBtn = document.getElementById("btn-capture")
+        const predictBtn = document.getElementById("btn-predict")
         const webcam = new Webcam(webcamElement, 'user', canvasElement, snapSoundElement);
+        const pokemonData = JSON.parse(JSON.stringify(pokemons));
         webcam.start()
         .then(result =>{
             console.log("webcam started");
@@ -49,11 +58,20 @@
         .catch(err => {
             console.log(err);
         });
-        snapBtn.onclick = () => {
-            console.log("hello")
-            let picture = webcam.snap();
-            console.log(picture)
-            snapBtn.style.marginTop = '1rem'
+        snapBtn.onclick = async () => {
+            const picture = webcam.snap()
+            const model = await tf.loadLayersModel('./model/model.json')
+            let myFaceImage = tf.browser.fromPixels(webcamElement)
+            console.log(myFaceImage)
+            myFaceImage = tf.image.resizeBilinear(myFaceImage, [128,128])
+            myFaceImage = tf.expandDims(myFaceImage, 0)
+            console.log(myFaceImage)
+            const prediction = model.predict(myFaceImage)//.strides.findIndex(ele => ele==1)
+            const predictionArray = prediction.dataSync()
+            console.log("prediction", prediction)
+            const maxValue = predictionArray.indexOf(Math.max(...predictionArray))
+            const result = pokemonData[String(maxValue)]
+            document.getElementById("result").setAttribute('src', `./results/${result}.png`)
         }
     </script>
 </html>
