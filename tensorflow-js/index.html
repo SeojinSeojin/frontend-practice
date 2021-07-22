@@ -7,7 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
     <script type="text/javascript" src="./pokemons.json"></script>
     <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
-    <title>Document</title>
+    <title>Guess Pojemon</title>
     <style>
         #btn-capture {
             text-align: center; 
@@ -71,7 +71,7 @@
             console.log("prediction", prediction)
             const maxValue = predictionArray.indexOf(Math.max(...predictionArray))
             const result = pokemonData[String(maxValue)]
-            document.getElementById("result").setAttribute('src', `./results/${result}.png`)
+            document.getElementById("result").setAttribute('src', `https://media.githubusercontent.com/media/SeojinSeojin/frontend-practice/master/tensorflow-js/results/${result}.png`)
         }
     </script>
 </html>

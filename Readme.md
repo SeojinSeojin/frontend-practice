@@ -22,6 +22,10 @@
 - [ploty.js 그래프 연습](https://seojinseojin.github.io/frontend-practice/ploty/)
 - [chart.js 그래프 연습 with 날씨 API](https://seojinseojin.github.io/frontend-practice/weather-api-proj/)
 
+### Tensorflow.js Application
+
+- [닮은 포켓몬을 찾아보세요](https://seojinseojin.github.io/frontend-practice/tensorflow-js/)
+
 ## Templates
 
 - [Home](https://seojinseojin.github.io/frontend-practice/template/home.html)
