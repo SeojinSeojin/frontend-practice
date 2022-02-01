@@ -1,0 +1,52 @@
+body {
+  height: 100vh;
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+#nss {
+  position: relative;
+}
+
+#껍데기 {
+  position: absolute;
+  top: 120px;
+  box-shadow: inset 34.4379px -34.4379px 68.8758px rgba(255, 98, 98, 0.3);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  width: 609.31px;
+  height: 225.56px;
+  border-radius: 677.22px;
+  transform: rotateZ(-30deg);
+  z-index: 100;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 98, 98, 0.1),
+      rgba(255, 98, 98, 0.1)
+    ),
+    radial-gradient(
+      66% 66% at 50% 50%,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+}
+
+#알맹이 {
+  background-color: #ff6262;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 548.55px;
+  height: 186.23px;
+  border-radius: 677.22px;
+  transform: rotateZ(15deg);
+}
+
+#알맹이 > div {
+  font-size: 88px;
+  color: white;
+  font-weight: 600;
+  text-shadow: 0px 1px 4px #00000048;
+}
